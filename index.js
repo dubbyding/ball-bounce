@@ -1,7 +1,9 @@
 const express = require('express');
+const dotenv = require('dotenv');
 
 const renderStatic = require('./middlewares/main');
 
+dotenv.config();
 const app = express();
 app.set('view options', { layout: false });
 app.use(express.static(__dirname + '/static'));
