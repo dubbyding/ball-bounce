@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/static'));
 
 app.use('/', renderStatic);
 
-app.listen(process.env.port || 3000, (err, done) => {
+app.listen(process.env.port, (err, done) => {
 	if (err) {
 		console.log('error running site');
 	} else {
